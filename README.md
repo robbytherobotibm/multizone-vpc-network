@@ -102,7 +102,6 @@ Variable          | Type    | Description                                       
 `resource_group`  | String  | Name of resource group to provision resources                             | `default`
 `unique_id`       | String  | Prefix for all resources created in the module. Must begin with a letter. | 
 `tags`            | List    | A list of tags for resources created                                      | `["multizone-vpc-module"]`
-`generation`      | Number  | VPC generation. Can be 1 or 2                                             | `1`
 `classic_access`  | Boolean | VPC Classic Access                                                        | `false`
 `cidr_blocks`     | List    | List of CIDR blocks for the subnets                                       | `["10.10.10.0/24", "10.10.11.0/24", "10.10.12.0/24"]`
 
