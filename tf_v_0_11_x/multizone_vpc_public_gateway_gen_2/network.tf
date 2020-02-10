@@ -4,8 +4,8 @@
 ##############################################################################
 
 resource ibm_is_network_acl multizone_acl {
-  name  = "${var.unique_id}-multizone-acl"
-  vpc   = "${ibm_is_vpc.vpc.id}"
+  name = "${var.unique_id}-multizone-acl"
+  vpc  = "${ibm_is_vpc.vpc.id}"
   rules = [
     {
       name   = "egress"

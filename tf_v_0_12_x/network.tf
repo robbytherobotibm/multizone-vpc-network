@@ -5,6 +5,7 @@
 resource ibm_is_network_acl multizone_acl {
   
   name = "${var.unique_id}-multizone-acl"
+  vpc  = "${var.generation == 1 ? null : ibm_is_vpc.vpc.id}"
 
   dynamic rules {
 
@@ -19,6 +20,8 @@ resource ibm_is_network_acl multizone_acl {
     }
 
   }
+
+  
 
 }
 

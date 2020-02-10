@@ -5,7 +5,7 @@
 provider ibm {
   ibmcloud_api_key      = "${var.ibmcloud_apikey}"
   region                = "${var.ibm_region}"
-  generation            = "${var.generation}"
+  generation            = 1
   ibmcloud_timeout      = 60
 }
 
